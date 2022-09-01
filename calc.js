@@ -6,8 +6,8 @@ e faça a transformação de uma unidade para outra
 */
 
   function recebeValor(value){
-    const F = value.includes('F')
-    const C = value.includes('C')
+    const F = value.toUpperCase().includes('F')
+    const C = value.toUpperCase().includes('C')
 
     if (!F && !C) {
       throw new Error(`Não foi identificado a letra ${value}`)
